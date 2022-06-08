@@ -31,6 +31,8 @@ export class VideosService {
       for await (const chunk of stream) {
         res.write(chunk);
       }
+
+      this.logger.log(`streaming ended ${id}`);
     } catch (error) {
       this.logger.error(error);
       throw new NotFoundException();

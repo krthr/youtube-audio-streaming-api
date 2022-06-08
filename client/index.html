@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/howler@2.2.3/dist/howler.min.js"></script>
+</head>
+
+<body>
+  <!-- <audio controls src="" ons></audio> -->
+
+  <script>
+    const sound = new Howl({
+      src: ['http://localhost:3000/videos/HoHgEDt0A5k/stream'],
+      html5: true
+    });
+
+
+    sound.play();
+  </script>
+</body>
+
+</html>
